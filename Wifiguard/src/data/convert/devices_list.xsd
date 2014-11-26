@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <xs:element  type="devices_type" name="devices"/>  
+    <xs:complexType name="devices_type">
+        <xs:sequence minOccurs="0"  maxOccurs="unbounded">
+            <xs:element type="device_type" name="device"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="devices_type">    
+        <xs:all>
+            <xs:element name="ip_address" type="xs:string"/>
+            <xs:element name="mac_address" type="xs:string"/>
+            <xs:element name="device_name" type="xs:string"/>   
+            <xs:element name="information" type="xs:string"/>
+        </xs:all>
+    </xs:complexType>   
+</xs:schema>

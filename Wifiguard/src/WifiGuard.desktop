@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0.0
+Type=Application
+Name=Wifi Guard
+Comment=Scan wifi and show connected devices  
+Exec=bash -c "java -jar `dirname %k`/WifiGuard.jar"
+Terminal=false
+Categories=Utility;Application;
+Name[cs_CZ]=WifiGuard
