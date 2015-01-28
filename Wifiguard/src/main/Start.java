@@ -1,7 +1,6 @@
 package main;
 
 import gui.GUI;
-import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
@@ -19,10 +18,9 @@ public class Start {
     */
      public static void main(String[] args){
         try {
-            UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
-            JOptionPane.showMessageDialog(null,"Can not set GTK LookAndFeel",
-            "Error GTK LookAndFeel",JOptionPane.ERROR_MESSAGE);
+            System.err.println("Can not find system LookAndFell");
         }
         GUI gui = new GUI();
         gui.setVisible(true);         

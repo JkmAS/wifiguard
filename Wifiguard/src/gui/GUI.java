@@ -5,6 +5,7 @@ import gui.panel.InfoPanel;
 import gui.panel.MenuPanel;
 import gui.panel.TablePanel;
 import java.awt.BorderLayout;
+import java.awt.Toolkit;
 import javax.swing.JFrame;
 
 /**
@@ -50,6 +51,7 @@ public class GUI {
         frame.add(infoPanel, BorderLayout.SOUTH);
          
         frame.pack();
+        frame.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/image/Wifi_Guard.png")));
         frame.setSize(600,265);
         frame.setLocation(150, 200);
         frame.setResizable(false);
