@@ -49,6 +49,7 @@ public class Database {
             XMLSteamWriter = new IndentingXMLStreamWriter(XMLOutputFactory.createXMLStreamWriter(new FileWriter(fileLoader.fileLoader("data/database","database.xml"))));
             XMLSteamWriter.writeStartDocument();
             XMLSteamWriter.writeStartElement("devices");
+                XMLSteamWriter.writeAttribute("xmlns", "http://www.wifiguard.cz");
             
             XMLSteamWriter.writeStartElement("time");
                 DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
