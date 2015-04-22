@@ -5,7 +5,10 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.xml.stream.XMLInputFactory;
 import javax.xml.stream.XMLOutputFactory;
@@ -18,7 +21,7 @@ import javax.xml.stream.XMLStreamWriter;
  *  Class Database
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.0.0
+ *@version    1.1.0
  *@created    05/2014
  */
 public class Database {
@@ -46,6 +49,12 @@ public class Database {
             XMLSteamWriter = new IndentingXMLStreamWriter(XMLOutputFactory.createXMLStreamWriter(new FileWriter(fileLoader.fileLoader("data/database","database.xml"))));
             XMLSteamWriter.writeStartDocument();
             XMLSteamWriter.writeStartElement("devices");
+            
+            XMLSteamWriter.writeStartElement("time");
+                DateFormat dateFormat = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                Date date = new Date();
+                XMLSteamWriter.writeCharacters(dateFormat.format(date));
+            XMLSteamWriter.writeEndElement();
             
             for (Device device : devices){
                 XMLSteamWriter.writeStartElement("device");

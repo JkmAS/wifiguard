@@ -9,7 +9,7 @@ import javax.xml.transform.stream.*;
  *  Class Convert
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.0.0
+ *@version    1.1.0
  *@created    05/2014
  */
 public class Convert {

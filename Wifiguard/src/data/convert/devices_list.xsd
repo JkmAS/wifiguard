@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+           elementFormDefault="qualified">
+    
     <xs:element  type="devices_type" name="devices"/>  
+    
     <xs:complexType name="devices_type">
-        <xs:sequence minOccurs="0"  maxOccurs="unbounded">
-            <xs:element type="device_type" name="device"></xs:element>
+        <xs:sequence>
+            <xs:element type="xs:string" name="time"/>
+            <xs:element type="device_type" name="device" minOccurs="0"  maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-    <xs:complexType name="devices_type">    
-        <xs:all>
+    
+    <xs:complexType name="device_type">    
+        <xs:sequence>
             <xs:element name="ip_address" type="xs:string"/>
             <xs:element name="mac_address" type="xs:string"/>
             <xs:element name="device_name" type="xs:string"/>   
             <xs:element name="information" type="xs:string"/>
-        </xs:all>
-    </xs:complexType>   
+        </xs:sequence>
+    </xs:complexType>  
+    
 </xs:schema>
