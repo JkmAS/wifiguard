@@ -12,7 +12,8 @@ Runs on Linux, yet tested on Ubuntu.
 
 It provides an additional layer of security and removes some of the weaknesses of WiFi networks. 
 Application scans network and provides gained data to users, which contains all devices on the local network, their IP addresses and many other interesting information.<br>
-<b>[Check website](http://wifiguard.cz/)</b> or <b>[download app](http://jkmas.cz/document/wifiguard.tar.gz)</b>.
+<b>[Check website](http://wifiguard.cz/)</b> or <b>[download app](http://jkmas.cz/document/wifiguard.tar.gz)</b>.<br>
+<b>[How to install the app?](http://wifiguard.cz/installation.html)</b> 
 
 Operating system requirements
 ------
