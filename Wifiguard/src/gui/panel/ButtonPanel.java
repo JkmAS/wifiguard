@@ -20,7 +20,7 @@ import logic.Subject;
  *  Class ButtonPanel
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    12/2013
  */
 public class ButtonPanel extends JPanel implements Subject{

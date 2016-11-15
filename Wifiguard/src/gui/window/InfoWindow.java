@@ -25,7 +25,7 @@ import logic.FileLoader;
  *  Class InfoWindow
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    12/2013
  */
 public class InfoWindow{
@@ -63,7 +63,7 @@ public class InfoWindow{
         app.setAlignmentX(Component.CENTER_ALIGNMENT);
         
         version = new JLabel();
-        version.setText("1.0.0");
+        version.setText("1.1.1");
         Font versionText = new Font("default", Font.BOLD, 17);
         version.setFont(versionText);
         version.setAlignmentX(Component.CENTER_ALIGNMENT);

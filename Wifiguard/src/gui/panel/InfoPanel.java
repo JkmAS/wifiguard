@@ -10,7 +10,7 @@ import logic.Observer;
  *  Class InfoPanel
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    12/2013
  */
 public class InfoPanel extends JPanel implements Observer {
@@ -25,7 +25,7 @@ public class InfoPanel extends JPanel implements Observer {
     public InfoPanel(){
         setLayout(new BorderLayout());
                
-        infoText = new JLabel(" Wifi Guard 2013 - 2014 | JkmAS");        
+        infoText = new JLabel(" Wifi Guard 2013 - 2016 | JkmAS");        
         infoText.setSize(350, 20);
         
         barPanel = new JPanel();

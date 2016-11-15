@@ -29,7 +29,7 @@ import logic.IniFileManager;
  *  Class SettingsWindow
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    12/2013
  */
 public class SettingsWindow {
@@ -60,7 +60,7 @@ public class SettingsWindow {
        dialog.setTitle("Settings");
        dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);  
        dialog.setLocation(400, 200);
-       dialog.setSize(new Dimension(300,260)); 
+       dialog.setSize(new Dimension(400,260)); 
        dialog.setResizable(false);
        dialog.setVisible(false);       
        dialog.add(makePanelSettings(), BorderLayout.CENTER);

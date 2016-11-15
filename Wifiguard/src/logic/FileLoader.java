@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  *  Class FileLoader
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    12/2013
  */
 public class FileLoader {
@@ -38,17 +38,17 @@ public class FileLoader {
     * @param file
     * @return path
     */
-    public String fileLoader(String folder, String file){
-        String path = "";
-        try {       
-            String canonicalPath = new File(".").getCanonicalPath();  
-            path = canonicalPath + File.separator + "src" + File.separator + folder + File.separator + file;
-        } catch (IOException ex) {
-            JOptionPane.showMessageDialog(null,"Can not read path to folder",
-            "Error reading path" ,JOptionPane.ERROR_MESSAGE);
-        }
-        return path;
-    }  
+//    public String fileLoader(String folder, String file){
+//        String path = "";
+//        try {       
+//            String canonicalPath = new File(".").getCanonicalPath();  
+//            path = canonicalPath + File.separator + "src" + File.separator + folder + File.separator + file;
+//        } catch (IOException ex) {
+//            JOptionPane.showMessageDialog(null,"Can not read path to folder",
+//            "Error reading path" ,JOptionPane.ERROR_MESSAGE);
+//        }
+//        return path;
+//    }  
     /**
     * Load a file
     * [only for users]
@@ -56,8 +56,8 @@ public class FileLoader {
      * @param file
      * @return path
     */
-//    public String fileLoader(String folder, String file){
-//        String path = System.getProperty("user.home") + File.separator + "wifiguard" + File.separator + folder + File.separator + file;
-//        return path;
-//    }  
+    public String fileLoader(String folder, String file){
+        String path = System.getProperty("user.home") + File.separator + "wifiguard" + File.separator + folder + File.separator + file;
+        return path;
+    }  
 }

@@ -21,7 +21,7 @@ import javax.xml.stream.XMLStreamWriter;
  *  Class Database
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    05/2014
  */
 public class Database {

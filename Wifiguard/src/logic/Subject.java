@@ -4,7 +4,7 @@ package logic;
  *  Interface Subject
  * 
  *@author     JkmAS Mejstrik Jakub
- *@version    1.1.0
+ *@version    1.1.1
  *@created    12/2013
  */
 public interface Subject {
