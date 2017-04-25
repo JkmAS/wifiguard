@@ -4,6 +4,7 @@ Wifi Guard
 <p align="center">
   <img src="http://wifiguard.cz/files/images/screenshot/app_v_1.0.0.png" alt="Wifi Guard app"/>
 </p>
+
 About
 -----
 Wifi Guard is a small application designed to monitor WiFi networks.
